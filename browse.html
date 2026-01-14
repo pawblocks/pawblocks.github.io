@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse PawBlocks Pet Shop catalog - Quality pet food, toys, grooming tools, and printables.">
+    <title>Browse Products - PawBlocks Pet Shop</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar" class="full browse">
+        <div class="brand-logo">
+            <a href="index.html"><img src="PBPS.png" alt="PawBlocks Pet Shop Logo"></a>
+        </div>
+        <div class="navbar-menu">
+            <ul class="navbar-menu-items">
+                <li class="navbar-menu-item navbar-icons">
+                    <a href="index.html" title="Home"><i class="ri-home-9-fill"></i></a>
+                    <a href="#" title="Shopping Basket"><i class="ri-shopping-basket-fill"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---- MAIN CONTENT ---->
+
+    <!-- Cat Food Category -->
+    <section class="category-section">
+        <div class="container">
+            <h2>Cat Food</h2>
+            <div class="items-grid">
+                <div class="item" data-price="15.99">
+                    <img src="img/whiskas.jpg" alt="Whiskas Adult" class="item-image">
+                    <h3 class="item-name">Cat Food (Adult)</h3>
+                    <p class="item-price">$350</p>
+                    <button class="add-to-basket" data-item="Cat Food (Adult)">Add to Basket</button>
+                </div>
+                <div class="item" data-price="18.99">
+                    <img src="img/whiskas-jr.jpg" alt="Whiskas Junior" class="item-image">
+                    <h3 class="item-name">Cat Food (Junior)</h3>
+                    <p class="item-price">$290</p>
+                    <button class="add-to-basket" data-item="Cat Food (Junior)">Add to Basket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dog Food Category -->
+    <section class="category-section">
+        <div class="container">
+            <h2>Dog Food</h2>
+            <div class="items-grid">
+                <div class="item" data-price="19.99">
+                    <img src="img/pedigree.jpg" alt="Pedigree Adult" class="item-image">
+                    <h3 class="item-name">Dog Food (Adult)</h3>
+                    <p class="item-price">$400</p>
+                    <button class="add-to-basket" data-item="Dog Food (Adult)">Add to Basket</button>
+                </div>
+                <div class="item" data-price="21.99">
+                    <img src="img/pedigree-jr.jpg" alt="Pedigree Junior" class="item-image">
+                    <h3 class="item-name">Dog Food (Junior)</h3>
+                    <p class="item-price">$340</p>
+                    <button class="add-to-basket" data-item="Dog Food (Junior)">Add to Basket</button>
+                </div>
+        </div>
+    </section>
+
+    <!-- Pet Toys Category -->
+    <section class="category-section">
+        <div class="container">
+            <h2>Pet Toys</h2>
+            <div class="items-grid">
+                <div class="item" data-price="12.99">
+                    <img src="img/dog-toys.png" alt="Dog Toy Set" class="item-image">
+                    <h3 class="item-name">Dog Toy Set</h3>
+                    <p class="item-price">$90</p>
+                    <button class="add-to-basket" data-item="Pet Toy Dog Set">Add to Basket</button>
+                </div>
+                <div class="item" data-price="14.99">
+                    <img src="img/cat-toys.png" alt="Cat Toy Set" class="item-image">
+                    <h3 class="item-name">Cat Toy Set</h3>
+                    <p class="item-price">$90</p>
+                    <button class="add-to-basket" data-item="Pet Toy Cat Set">Add to Basket</button>
+                </div>
+                <div class="item" data-price="13.99">
+                    <img src="img/pet-puzzle.png" alt="Interactive Puzzle Toy" class="item-image">
+                    <h3 class="item-name">Interactive Puzzle</h3>
+                    <p class="item-price">$110</p>
+                    <button class="add-to-basket" data-item="Pet Toy Puzzle">Add to Basket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grooming Tools Category -->
+    <section class="category-section">
+        <div class="container">
+            <h2>Grooming Tools</h2>
+            <div class="items-grid">
+                <div class="item" data-price="22.99">
+                    <img src="img/brush-set.png" alt="Brush Set" class="item-image">
+                    <h3 class="item-name">Brush Set</h3>
+                    <p class="item-price">$150</p>
+                    <button class="add-to-basket" data-item="Grooming Brush Set">Add to Basket</button>
+                </div>
+                <div class="item" data-price="24.99">
+                    <img src="img/nail-cutter.png" alt="Nail Clipper" class="item-image">
+                    <h3 class="item-name">Nail Clipper</h3>
+                    <p class="item-price">$45</p>
+                    <button class="add-to-basket" data-item="Grooming Nail Clipper">Add to Basket</button>
+                </div>
+                <div class="item" data-price="23.99">
+                    <img src="img/shampoo.png" alt="Shampoo" class="item-image">
+                    <h3 class="item-name">Shampoo</h3>
+                    <p class="item-price">$100</p>
+                    <button class="add-to-basket" data-item="Grooming Shampoo">Add to Basket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Printables Category -->
+    <section class="category-section">
+        <div class="container">
+            <h2>Printables</h2>
+            <div class="items-grid">
+                <div class="item" data-price="4.99">
+                    <img src="img/pet-profile.png" alt="Pet Profile PDF" class="item-image">
+                    <h3 class="item-name">Pet Profile PDF</h3>
+                    <p class="item-price">$5</p>
+                    <button class="add-to-basket" data-item="Printable Pet Profile">Add to Basket</button>
+                </div>
+                <div class="item" data-price="5.99">
+                    <img src="img/pet-care.png" alt="Pet Care PDF" class="item-image">
+                    <h3 class="item-name">Pet Care PDF</h3>
+                    <p class="item-price">$5</p>
+                    <button class="add-to-basket" data-item="Printable Pet Care">Add to Basket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---- SIDEBAR & MODALS ---->
+
+    <aside class="basket-sidebar">
+        <div class="basket-header">
+            <h3>Your Basket</h3>
+            <i class="ri-close-line close-basket" aria-label="Close basket"></i>
+        </div>
+        <div class="basket-items"></div>
+        <div class="basket-total">
+            <strong>Total: $<span class="total-price">0.00</span></strong>
+        </div>
+        <button class="btn btn-primary btn-place-order">Complete Your Order</button>
+    </aside>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Complete Your Order</h3>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top" aria-label="Scroll to top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

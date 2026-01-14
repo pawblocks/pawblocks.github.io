@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PawBlocks Pet Shop - Your one-stop shop for quality pet food, toys, grooming tools, and printables.">
+    <meta property="og:title" content="PawBlocks Pet Shop">
+    <meta property="og:description" content="PawBlocks Pet Shop - Your one-stop shop for quality pet food, toys, grooming tools, and printables.">
+    <title>PawBlocks Pet Shop | Quality Pet Products</title>
+
+    <!---- Links to external stylesheets ---->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!---- NAVIGATION ---->
+    <nav id="navbar" class="full">
+        <div class="brand-logo">
+            <a href="index.html"><img src="PBPS.png" alt="PawBlocks Pet Shop Logo"></a>
+        </div>
+
+        <!---- Hamburger menu for mobile view ---->
+        <button class="hamburger-menu" aria-label="Toggle navigation menu" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!---- Search bar ---->
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." aria-label="Search products">
+            <i class="ri-search-line search-icon"></i>
+        </div>
+
+        <!---- Navigation menu items ---->
+        <div class="navbar-menu">
+            <ul class="navbar-menu-items">
+                <li class="navbar-menu-item"><a href="index.html">Home</a></li>
+                <li class="navbar-menu-item"><a href="browse.html">Browse</a></li>
+                <li class="navbar-menu-item"><a href="#about">About</a></li>
+                <li class="navbar-menu-item"><a href="#contact">Contact</a></li>
+                <!---- Navigation Icons ---->
+                <li class="navbar-menu-item navbar-icons">
+                    <a href="#" title="Shopping Basket"><i class="ri-shopping-basket-fill"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content" role="main">
+        <!---- Home section ---->
+        <section class="home" id="home">
+            <div class="home-overlay"></div>
+            <div class="home-text">
+                <h1>Everything Your Pet Needs, <br> One Click Away</h1>
+                <h4>Shop for your furry friends with <br> ease, all from home!</h4>
+                <a href="browse.html" class="btn">Browse Products</a>
+            </div>
+        </section>
+
+    <!---- About section ---->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At PawBlocks Pet Shop, we believe every pet deserves the best. Our carefully curated selection of pet foods, toys, and grooming supplies ensures your furry friends stay happy and healthy. We're committed to providing quality products and exceptional service for pet lovers everywhere.</p>
+        </div>
+    </section>
+
+    <!---- Instructions section ---->
+    <section class="instructions">
+        <div class="container">
+            <h2>How to Use PawBlocks</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="ri-shopping-cart-line"></i>
+                    </div>
+                    <h3>Browse Products</h3>
+                    <p>Visit our Browse page to explore all available pet products organized by category.</p>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="ri-add-circle-line"></i>
+                    </div>
+                    <h3>Add to Cart</h3>
+                    <p>Click "Add to Cart" on any product to add it to your shopping cart.</p>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="ri-check-double-line"></i>
+                    </div>
+                    <h3>Review & Checkout</h3>
+                    <p>View your cart anytime by clicking the cart icon to see your total and proceed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---- Featured section ---->
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card pet-foods">
+                    <img src="img/pet-foods.png" alt="Pet Foods" class="product-image">
+                    <h3>Pet Foods</h3>
+                </div>
+
+                <div class="product-card pet-toys">
+                    <img src="img/pet-toys.png" alt="Pet Toys" class="product-image">
+                    <h3>Pet Toys</h3>
+                </div>
+
+                <div class="product-card grooming">
+                    <img src="img/grooming-tools.png" alt="Grooming Tools" class="product-image">
+                    <h3>Grooming Tools</h3>
+                </div>
+
+                <div class="product-card printables">
+                    <img src="img/printables.png" alt="Printables" class="product-image">
+                    <h3>Printables</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---- Contact section ---->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://getform.io/f/apjxxvea" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Enter your message" rows="6" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <p class="contact-footer">Need help? Send us a message and we'll get back to you soon.</p>
+        </div>
+    </section>
+
+    <!---- SIDEBAR & MODALS ---->
+
+    <!---- Shopping basket sidebar ---->
+    <aside class="basket-sidebar">
+        <div class="basket-header">
+            <h3>Your Basket</h3>
+            <i class="ri-close-line close-basket" aria-label="Close basket"></i>
+        </div>
+        <div class="basket-items"></div>
+        <div class="basket-total">
+            <strong>Total: $<span class="total-price">0.00</span></strong>
+        </div>
+        <button class="btn btn-primary btn-place-order">Complete Your Order</button>
+    </aside>
+
+    <!---- Checkout modal ---->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Complete Your Order</h3>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    
+    <!---- Page overlay ---->
+    <div class="overlay"></div>
+
+    <!---- Scroll to top button-- -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top" aria-label="Scroll to top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!---- SCRIPTS ---->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
